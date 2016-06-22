@@ -1,0 +1,43 @@
+@import 'fonts';
+@import 'vars';
+@import 'mixins';
+@import 'default';
+
+@mixin panel{
+	position: absolute; top: 0;
+	min-height: 100vh;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.panel-left{
+	@include panel;
+	left: 0;
+}
+
+.panel-right{
+	@include panel;
+	left: 50%;
+}
+
+.panel-center{
+	margin: 0 auto;
+	width: 50%;
+	min-height: 100vh;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.bg-purple{ background-color: $purple; color: white;}
+.bg-yellow{ background-color: $yellow; }
+.bg-red{ background-color: $red; }
+.bg-blue{ background-color: $blue; color: white; }
+.bg-gray{ background-color: $gray; color: white; }
+
+.c-purple{ color: $purple; }
+.c-yellow{ color: $yellow; }
+.c-red{ color: $red; }
+.c-blue{ color: $blue; }
+.c-gray{ color: $gray; }
+.c-white{ color: white; }

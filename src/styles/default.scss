@@ -1,0 +1,178 @@
+html, body {
+	font-family: 'montserrat', 'Helvetica', Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	color: $purple;
+}
+
+h1{
+	font-size: 60px;
+	font-weight: 800;
+	margin: 10px 0 20px;
+	line-height: 1em;
+}
+
+h2{
+	font-size: 28px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin: 10px 0;
+}
+
+h3{
+	font-size: 28px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	text-transform: capitalize;
+	margin: 10px 0;
+}
+
+h4{
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	margin: 10px 0;
+}
+
+p{
+	line-height: 1em;
+	margin: 10px 0;
+	
+	p+&{
+		margin-top: 20px;
+	}
+}
+
+ul, ol{
+	padding: 0 0 0 17px;
+	margin: 10px 0;
+	list-style: outside;
+}
+
+li{
+	line-height: 1em;
+	margin: 5px 0;
+}
+
+a{
+	color: inherit;
+}
+
+input{
+	@include placeholder{
+		color: transparentize(black, .8);
+	}
+}
+
+form{
+	box-shadow: 0 0 10px transparentize(black, .9);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"]{
+	font-size: 20px;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	padding: 0 20px;
+	margin: 0;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+input[type="submit"],
+button{
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px 40px;
+	margin: 10px 0;
+	cursor: pointer;
+	outline: none;
+	transition: 200ms color, 200ms background;
+	border-radius: 0;
+	-webkit-appearance: none;
+	
+	background-color: $purple;
+	color: white;
+	border: 4px solid transparentize(white, .6);
+	
+	// white bg
+	&:hover, &:active{
+		background-color: $red;
+	}
+	
+	// purple bg
+	.bg-purple &{
+		background-color: $yellow;
+		color: $purple;
+		border: 4px solid transparentize($purple, .6);
+		
+		&:hover, &:active{
+			background-color: white;
+			color: $red;
+		}
+	}
+	
+	// red bg
+	.bg-red &{
+		background-color: white;
+		color: $purple;
+		border: 4px solid transparentize($red, .6);
+		
+		&:hover, &:active{
+			background-color: $yellow;
+		}
+	}
+	
+	// yellow bg
+	.bg-yellow &{
+		background-color: $purple;
+		color: white;
+		border: 4px solid transparentize($yellow, .6);
+		
+		&:hover, &:active{
+			background-color: $red;
+		}
+	}
+	
+	// blue bg
+	.bg-blue &{
+		background-color: white;
+		color: $red;
+		border: 4px solid transparentize($blue, .6);
+		
+		&:hover, &:active{
+			background-color: $yellow;
+			color: $purple;
+		}
+	}
+	
+	// gray bg
+	.bg-gray &{
+		background-color: white;
+		color: $red;
+		border: 4px solid transparentize($gray, .6);
+		
+		&:hover, &:active{
+			background-color: $yellow;
+			color: $purple;
+		}
+	}
+}
+
+hr{
+	box-sizing: border-box;
+	border: none;
+	width: 100%;
+	max-width: 230px;
+	height: 2px;
+	border-radius: 1px;
+	margin: 30px auto;
+	padding: 0 40px;
+}
