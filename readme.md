@@ -1,1 +1,1 @@
-# The style files for Mr R A's YellowBelt JavaScript course.
+# Mr R A's Yellowbelt JavaScript CSS
