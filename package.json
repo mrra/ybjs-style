@@ -1,10 +1,12 @@
 {
   "name": "yellowbelt-js-style",
-  "version": "1.0.0",
-  "description": "Mr R A's Yellowbelt JavaScript CSS",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "1.0.1",
+  "homepage": "http://mrra.co/yellowbelt-js",
+  "description": "Mr R A's Yellowbelt JavaScript Style",
+  "license": "MIT",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/mrra/ybjs-style.git"
   },
   "keywords": [
     "js",
@@ -12,14 +14,16 @@
     "teaching",
     "beginner"
   ],
-  "author": "Rich Armstrong",
-  "license": "ISC",
+  "author": {
+    "name": "Rich Armstrong",
+    "email": "rich@mrra.co",
+    "url": "http://mrra.co"
+  },
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-clean-css": "^2.0.6",
-    "gulp-minify-css": "^1.2.4",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",

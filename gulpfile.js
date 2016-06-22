@@ -3,7 +3,6 @@ var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var cleanCSS = require('gulp-clean-css');
 var autoprefixer = require('gulp-autoprefixer');
-var minify = require('gulp-minify-css');
 var del = require('del');
 var notify = require('gulp-notify');
 var plumber = require('gulp-plumber');
@@ -36,7 +35,6 @@ function styles () {
     .pipe(sass())
     .pipe(cleanCSS())
     .pipe(autoprefixer({browsers: ['last 2 versions']}))
-    .pipe(minify())
     .pipe(rename({
       basename: 'ybjs',
     }))
