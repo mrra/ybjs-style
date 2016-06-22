@@ -6,7 +6,7 @@
 - Install Node
 - Open Terminal, and run `sudo npm install -g gulpjs/gulp-cli#4.0`
 - Enter your password if required
-- cd to ybjs-style-master folder, or drag the ybjs-style-master folder in Terminal
+- cd to `ybjs-style-master folder`, or drag the `ybjs-style-master` folder in Terminal
 - run `npm install`
 - run `gulp`
 - Edit files in `src/styles/`
