@@ -7,6 +7,14 @@
 //   :-ms-input-placeholder      {@content}  
 // }
 
+@mixin panel{
+  position: absolute; top: 0;
+  min-height: 100vh;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
 @mixin optional-at-root($sel) {
   @at-root #{if(not &, $sel, selector-append(&, $sel))} {
     @content;
